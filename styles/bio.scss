@@ -1,0 +1,27 @@
+/* Header Component */
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+  
+
+    // &__navigation-list{
+    //     @include mixins.reset-list;
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
+    // &__navigation-link {
+    //     text-decoration: none;
+    //     margin-left: 2rem;
+    //     color: black;
+
+    //     &--active {
+    //         @include mixins.active-link;
+    //     }
+    // }
+}
+
