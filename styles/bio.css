@@ -1,10 +1,162 @@
-/* Header Component */
+body {
+  margin: 0;
+}
+
 .header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  background-color: gray;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__logo-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 1rem 0;
+}
+@media (min-width: 768px) {
+  .header__logo-container {
+    padding-left: 2rem;
+  }
+}
+.header__navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .header__navigation-list {
+    padding-left: 4rem;
+    padding-bottom: 0;
+  }
+}
+.header__navigation-list-item {
+  width: 50%;
+}
+.header__navigation-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.header__navigation-link--active:active {
+  border-bottom: 2px solid blue;
+}
+.header__navigation-link--hover:hover {
+  border-bottom: 2px solid blue;
+}
+@media (min-width: 768px) {
+  .header__navigation-link {
+    padding-right: 4rem;
+    padding-bottom: 10px;
+  }
+}
+
+.hero {
+  display: flex;
   align-items: center;
-  padding: 1rem 5rem;
+  background: url("../../assets/Images/hero-bio.jpg") no-repeat center;
+  background-size: cover;
+  height: 12rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 32rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 40rem;
+    background-size: cover;
+  }
+}
+.hero__title {
+  color: white;
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3.75rem;
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__title {
+    padding-left: 6rem;
+  }
+}
+
+.about__title {
+  font-size: 1rem;
+}
+.about__picture {
+  background: url("../../assets/Images/band.jpg");
+  background-size: contain;
+  height: 15rem;
+}
+@media (min-width: 768px) {
+  .about__picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32rem;
+  }
+}
+@media (min-width: 768px) {
+  .about__body-text-container {
+    display: flex;
+  }
+}
+
+.gallery__item {
+  height: 13rem;
+}
+.gallery__one {
+  background: url("../../assets/Images/Photo-gallery-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__two {
+  background: url("../../assets/Images/Photo-gallery-2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__three {
+  background: url("../../assets/Images/Photo-gallery-3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__four {
+  background: url("../../assets/Images/Photo-gallery-4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__five {
+  background: url("../../assets/Images/Photo-gallery-5.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__six {
+  background: url("../../assets/Images/Photo-gallery-6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__seven {
+  background: url("../../assets/Images/Photo-gallery-7.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__eight {
+  background: url("../../assets/Images/Photo-gallery-8.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gallery__nine {
+  background: url("../../assets/Images/Photo-gallery-9.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=bio.css.map */

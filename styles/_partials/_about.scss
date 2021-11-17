@@ -1,0 +1,28 @@
+@use './mixins';
+@use './variables';
+@use './global';
+
+.about {
+
+    &__title {
+        font-size: 1rem;
+    }
+
+    &__picture {
+        background: url('../../assets/Images/band.jpg');
+        background-size: contain;
+        height: 15rem;
+
+        @include mixins.tablet {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 32rem;
+        }
+    }
+
+    &__body-text-container {
+        @include mixins.tablet {
+            display: flex;
+        }
+    }
+}
