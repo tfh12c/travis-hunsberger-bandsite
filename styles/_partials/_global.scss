@@ -1,6 +1,8 @@
 @use './typography' as *;
+@use './variables';
 
 body {
     margin: 0;
     font-family: 'AvenirNext LT Pro';
+    color: variables.$color-bandsite-black;
 }

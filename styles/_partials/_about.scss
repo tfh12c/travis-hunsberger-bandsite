@@ -4,35 +4,97 @@
 @use './typography' as *;
 
 .about {
-
     padding: 0 1rem;
 
+    @include mixins.tablet {
+        padding-bottom: 1rem;
+    }
+
+    /* About the Musicians */
     &__title {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
         margin: 1rem 0;
+
+        @include mixins.tablet {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            font-weight: 600;
+            margin: 2rem 0;
+        }
     }
 
     &__picture {
         background: url('../../assets/Images/band.jpg');
-        background-size: contain;
-        height: 15rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 15rem;
+        max-width: 100%;
 
         @include mixins.tablet {
             background-repeat: no-repeat;
             background-size: cover;
-            height: 32rem;
+            height: 24rem;
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+
+    /* Text beneath section picture */
+    &__subheader {
+        font-size: .875rem;
+        line-height: 1.375rem;
+        font-weight: 600;
+
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            margin: 0;
+        }
+    }
+
+    &__subheader-attribution {
+        @include mixins.tablet {
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-top: -1.5rem;
+
         }
     }
 
     &__body-text-container {
+        /* Puts body text side by side */
         @include mixins.tablet {
             display: flex;
         }
     }
 
-    &__subheader {
-        font-family: 'AvenirNext LT Pro';
-        font-weight: 700;
+
+
+    &__body-header {
+        font-size: .8125rem;
+        line-height: 1.125rem;
+        font-weight: 600;
+
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 600;
+            padding-left: 2rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &__body-text {
+        @include mixins.tablet {
+            font-size: .875rem;
+            line-height: 1.375rem;
+            font-weight: 400;
+            padding: 0 2rem;
+        }
     }
 
 }

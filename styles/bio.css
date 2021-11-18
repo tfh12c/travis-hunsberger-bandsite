@@ -24,6 +24,7 @@
 body {
   margin: 0;
   font-family: "AvenirNext LT Pro";
+  color: #323232;
 }
 
 .header {
@@ -106,16 +107,20 @@ body {
     height: 2rem;
   }
 }
+/* Hero background image and sizing here */
 .hero {
   display: flex;
   align-items: center;
-  background: url("../../assets/Images/hero-bio.jpg") no-repeat center;
+  background: url("../assets/Images/hero-bio.jpg") no-repeat center;
   background-size: cover;
-  height: 12rem;
+  width: 100%;
+  min-height: 13rem;
+  max-height: auto;
+  box-shadow: inset 0 0 0 1000px rgba(50, 50, 50, 0.5);
 }
 @media (min-width: 768px) {
   .hero {
-    height: 32rem;
+    height: 25rem;
   }
 }
 @media (min-width: 1280px) {
@@ -127,6 +132,9 @@ body {
 .hero__title {
   color: white;
   padding-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .hero__title {
@@ -142,31 +150,94 @@ body {
 
 .about {
   padding: 0 1rem;
+  /* About the Musicians */
+  /* Text beneath section picture */
+}
+@media (min-width: 768px) {
+  .about {
+    padding-bottom: 1rem;
+  }
 }
 .about__title {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
   margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .about__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+    margin: 2rem 0;
+  }
 }
 .about__picture {
   background: url("../../assets/Images/band.jpg");
-  background-size: contain;
-  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   .about__picture {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 32rem;
+    height: 24rem;
+    width: 85%;
+    margin: 0 auto;
   }
+}
+.about__subheader {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .about__subheader {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .about__subheader-attribution {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-top: -1.5rem;
+  }
+}
+.about__body-text-container {
+  /* Puts body text side by side */
 }
 @media (min-width: 768px) {
   .about__body-text-container {
     display: flex;
   }
 }
-.about__subheader {
-  font-family: "AvenirNext LT Pro";
-  font-weight: 700;
+.about__body-header {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .about__body-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    padding-left: 2rem;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .about__body-text {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    padding: 0 2rem;
+  }
 }
 
 .gallery {
