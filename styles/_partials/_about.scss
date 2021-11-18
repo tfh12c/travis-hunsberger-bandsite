@@ -1,11 +1,15 @@
 @use './mixins';
 @use './variables';
 @use './global';
+@use './typography' as *;
 
 .about {
 
+    padding: 0 1rem;
+
     &__title {
         font-size: 1rem;
+        margin: 1rem 0;
     }
 
     &__picture {
@@ -25,4 +29,10 @@
             display: flex;
         }
     }
+
+    &__subheader {
+        font-family: 'AvenirNext LT Pro';
+        font-weight: 700;
+    }
+
 }

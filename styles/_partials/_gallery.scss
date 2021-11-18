@@ -4,8 +4,16 @@
 
 .gallery {
 
+    background-color: variables.$color-alabaster;
+    padding: 1rem 1rem;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
     &__item {
-      height: 13rem; 
+      height: 12rem; 
     }
 
     &__one {

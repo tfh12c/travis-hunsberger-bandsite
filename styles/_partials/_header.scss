@@ -3,13 +3,18 @@
 @use './global';
 
 .header {
-    background-color: gray;
+    background-color: variables.$color-bandsite-black;
 
     @include mixins.tablet {
         display: flex;
         align-items: center;
     }
 
+    @include mixins.desktop {
+        padding-top: 1rem;
+    }
+
+    /* This holds the BANDSITE logo */
     &__logo-container {
         display: flex;
         justify-content: center;
@@ -18,9 +23,15 @@
         @include mixins.tablet {
             padding-left: 2rem;
         }
+
+        @include mixins.desktop {
+            padding-left: 8rem;
+            margin-bottom: .5rem;
+        }
+
         }
     
-
+    /* UL holding nav links with reset list formatting */
     &__navigation-list {
         @include mixins.reset-list;
         // padding-bottom: 1rem;
@@ -33,34 +44,49 @@
         }
     }
 
+    /* Sets Biography and Shows to 50% of screen on mobile */
     &__navigation-list-item {
         width: 50%;
         
        
     }
 
+    /* Styling of Biography and Shows link */
     &__navigation-link {
         display: block;
         text-decoration: none;
-        color: white;
+        color: variables.$color-mercury;
         text-align: center;
         padding-bottom: 1rem;
+        font-size: .875rem;
+        line-height: 1.375rem;
+        font-weight: 600;
 
-        &--active:active {
-            border-bottom: 2px solid blue; 
+
+        &--active {
+            color: variables.$color-white;
+            border-bottom: .25rem solid variables.$color-white;
+            font-weight: 700;
         }
 
         &--hover:hover {
-            border-bottom: 2px solid blue;
+            border-bottom: .25rem solid variables.$color-white;
         }
      
-        
-
         @include mixins.tablet {
-            padding-right: 4rem;
-            padding-bottom: 10px;
+            margin-right: 4rem;
+            margin-top: 1rem;
+            padding-right: 1rem;
         }
 
-        
+        @include mixins.desktop {
+            height: 2rem;
+        }
+    }
+
+    &__image {
+        @include mixins.desktop {
+            
+        }
     }
 }
