@@ -21,14 +21,20 @@
             @include mixins.header-padding;
             padding-left: 2rem;
         }
+        @include mixins.desktop {
+            padding-left: 6rem;
+        }
     }
 
-
+    /* Holds all elements under section title */
     &__container {
         @include mixins.tablet {
             display: flex;
             flex-direction: column;
             margin: 0 5rem;
+        }
+        @include mixins.desktop {
+            margin: 0 11rem;
         }
     }
 
@@ -36,27 +42,30 @@
         width: 100%;
         height: 14rem;
 
-
         @include mixins.tablet {
             height: 20rem;
-            width: 100%;
+        }
+        @include mixins.desktop {
+            height: 30rem;
         }
     }
 
-    /* Text beneath section picture */
+    /* Quote beneath section picture */
     &__subheader {
         font-size: .875rem;
         line-height: 1.375rem;
         font-weight: 600;
 
         @include mixins.tablet {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            font-weight: 600;
+            @include mixins.subheader-text;
             margin-top: 2rem;
+        }
+        @include mixins.desktop {
+            width: 45rem;
         }
     }
 
+    /* Attributing quote from Bryan Teddy */
     &__subheader-attribution {
         @include mixins.tablet {
             font-size: 1rem;
@@ -65,7 +74,7 @@
         }
     }
 
-    /* Contains info about The Bees Knees */
+    /* The Bees Knees body text */
     &__body-text-container {
         /* Puts body text side by side */
         @include mixins.tablet {
@@ -74,26 +83,23 @@
     }
 
     &__body-header {
-        font-size: .8125rem;
-        line-height: 1.125rem;
-        font-weight: 600;
+        @include mixins.mobile-subheader-text;
 
         @include mixins.tablet {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            font-weight: 600;
+            @include mixins.subheader-text;
             margin-bottom: 0;
         }
     }
 
     &__body-text {
+        @include mixins.mobile-body-footer-text;
+
         @include mixins.tablet {
-            font-size: .875rem;
-            line-height: 1.375rem;
-            font-weight: 400;
+            @include mixins.body-text;
         }
     }
 
+    /* Adds padding between side by side text */
     &__body-text-left {
         @include mixins.tablet {
             padding-right: 1rem;

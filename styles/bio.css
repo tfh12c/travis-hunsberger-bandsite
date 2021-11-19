@@ -162,15 +162,18 @@ body {
 }
 @media (min-width: 1280px) {
   .hero__title {
-    padding-left: 6rem;
+    padding-left: 10rem;
   }
 }
 
 .about {
   padding: 0 1rem;
   /* About the Musicians */
-  /* Text beneath section picture */
-  /* Contains info about The Bees Knees */
+  /* Holds all elements under section title */
+  /* Quote beneath section picture */
+  /* Attributing quote from Bryan Teddy */
+  /* The Bees Knees body text */
+  /* Adds padding between side by side text */
 }
 @media (min-width: 768px) {
   .about {
@@ -195,11 +198,21 @@ body {
     padding-left: 2rem;
   }
 }
+@media (min-width: 1280px) {
+  .about__title {
+    padding-left: 6rem;
+  }
+}
 @media (min-width: 768px) {
   .about__container {
     display: flex;
     flex-direction: column;
     margin: 0 5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .about__container {
+    margin: 0 11rem;
   }
 }
 .about__picture {
@@ -209,7 +222,11 @@ body {
 @media (min-width: 768px) {
   .about__picture {
     height: 20rem;
-    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .about__picture {
+    height: 30rem;
   }
 }
 .about__subheader {
@@ -223,6 +240,11 @@ body {
     line-height: 2rem;
     font-weight: 600;
     margin-top: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .about__subheader {
+    width: 45rem;
   }
 }
 @media (min-width: 768px) {
@@ -241,8 +263,8 @@ body {
   }
 }
 .about__body-header {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
   font-weight: 600;
 }
 @media (min-width: 768px) {
@@ -253,9 +275,14 @@ body {
     margin-bottom: 0;
   }
 }
+.about__body-text {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
 @media (min-width: 768px) {
   .about__body-text {
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.375rem;
     font-weight: 400;
   }
