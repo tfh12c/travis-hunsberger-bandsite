@@ -34,7 +34,6 @@
     /* UL holding nav links with reset list formatting */
     &__navigation-list {
         @include mixins.reset-list;
-        // padding-bottom: 1rem;
         display: flex;
         justify-content: space-around;
 
@@ -58,9 +57,7 @@
         color: variables.$color-mercury;
         text-align: center;
         padding-bottom: 1rem;
-        font-size: .875rem;
-        line-height: 1.375rem;
-        font-weight: 600;
+       
 
 
         &--active {
@@ -70,21 +67,29 @@
         }
 
         &--hover:hover {
+            color: variables.$color-white;
             border-bottom: .25rem solid variables.$color-white;
         }
      
         @include mixins.tablet {
             margin-right: 4rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
             padding-right: 1rem;
+            padding-bottom: 1.5em;
+            @include mixins.body-text;
+            
         }
 
         @include mixins.desktop {
             height: 2rem;
+            @include mixins.body-text;
         }
     }
 
     &__image {
+        @include mixins.tablet {
+            padding-top: .5rem;
+        }
         @include mixins.desktop {
             
         }

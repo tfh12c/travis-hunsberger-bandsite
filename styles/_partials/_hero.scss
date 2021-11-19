@@ -9,8 +9,7 @@
    background: url('../assets/Images/hero-bio.jpg') no-repeat center;
    background-size: cover;
    width: 100%;
-   min-height: 13rem; 
-   max-height: auto;
+   height: 25vh;
    box-shadow: inset 0 0 0 1000px rgba(50,50,50,.5);
 
    @include mixins.tablet {

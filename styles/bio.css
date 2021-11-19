@@ -21,6 +21,9 @@
   font-style: normal;
   font-display: swap;
 }
+/* Header Navigation reset list */
+/* Mobile Text Styles */
+/* Tablet and Desktop Text Styles */
 body {
   margin: 0;
   font-family: "AvenirNext LT Pro";
@@ -83,9 +86,6 @@ body {
   color: #E1E1E1;
   text-align: center;
   padding-bottom: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 600;
 }
 .header__navigation-link--active {
   color: #FFFFFF;
@@ -93,18 +93,31 @@ body {
   font-weight: 700;
 }
 .header__navigation-link--hover:hover {
+  color: #FFFFFF;
   border-bottom: 0.25rem solid #FFFFFF;
 }
 @media (min-width: 768px) {
   .header__navigation-link {
     margin-right: 4rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding-right: 1rem;
+    padding-bottom: 1.5em;
+    font-size: 14px;
+    line-height: 1.375rem;
+    font-weight: 400;
   }
 }
 @media (min-width: 1280px) {
   .header__navigation-link {
     height: 2rem;
+    font-size: 14px;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+@media (min-width: 768px) {
+  .header__image {
+    padding-top: 0.5rem;
   }
 }
 /* Hero background image and sizing here */
@@ -114,8 +127,7 @@ body {
   background: url("../assets/Images/hero-bio.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
-  min-height: 13rem;
-  max-height: auto;
+  height: 25vh;
   box-shadow: inset 0 0 0 1000px rgba(50, 50, 50, 0.5);
 }
 @media (min-width: 768px) {
