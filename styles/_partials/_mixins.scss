@@ -20,6 +20,18 @@
     list-style: none;
 }
 
+/* Mobile Header Padding */
+@mixin mobile-header-padding {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Tablet and Desktop Header Padding */
+@mixin header-padding {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+}
+
 /* Mobile Text Styles */
 @mixin mobile-header-text {
     font-size: 1.5rem;
