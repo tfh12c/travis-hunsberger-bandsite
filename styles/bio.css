@@ -118,10 +118,11 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .header__image {
+  .header__logo-image {
     padding-top: 0.5rem;
   }
 }
+
 /* Hero background image and sizing here */
 .hero {
   display: flex;
@@ -326,4 +327,8 @@ body {
   .gallery__item {
     width: 30%;
   }
+}
+
+.footer {
+  background-color: gray;
 }/*# sourceMappingURL=bio.css.map */

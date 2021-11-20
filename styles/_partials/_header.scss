@@ -84,12 +84,9 @@
         }
     }
 
-    &__image {
+    &__logo-image {
         @include mixins.tablet {
             padding-top: .5rem;
-        }
-        @include mixins.desktop {
-            
         }
     }
 }
