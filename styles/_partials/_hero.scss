@@ -30,7 +30,7 @@
 
        @include mixins.tablet {
            @include mixins.page-header-text;
-           padding-left: 2rem;
+           padding-left: 4rem;
        }
 
        @include mixins.desktop {

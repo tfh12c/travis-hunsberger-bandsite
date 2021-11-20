@@ -2,7 +2,7 @@
 /* Colors and Backgrounds */
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../../assets/Font/AvenirNextLTPro-Bold.woff") format("woff");
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -157,7 +157,7 @@ body {
     font-size: 3.75rem;
     line-height: 4.25rem;
     font-weight: 700;
-    padding-left: 2rem;
+    padding-left: 4rem;
   }
 }
 @media (min-width: 1280px) {
@@ -217,17 +217,8 @@ body {
 }
 .about__picture {
   width: 100%;
-  height: 14rem;
-}
-@media (min-width: 768px) {
-  .about__picture {
-    height: 20rem;
-  }
-}
-@media (min-width: 1280px) {
-  .about__picture {
-    height: 30rem;
-  }
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about__subheader {
   font-size: 0.875rem;
@@ -297,6 +288,11 @@ body {
   background-color: #FAFAFA;
   padding: 0 1rem;
 }
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 0 5rem;
+  }
+}
 .gallery__title {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -323,15 +319,11 @@ body {
   }
 }
 .gallery__item {
-  height: 12rem;
   padding-bottom: 1rem;
   width: 100%;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
 }
 @media (min-width: 768px) {
   .gallery__item {
-    height: 8rem;
     width: 30%;
   }
 }/*# sourceMappingURL=bio.css.map */

@@ -6,6 +6,10 @@
     background-color: variables.$color-alabaster;
     padding: 0 1rem;
 
+    @include mixins.desktop {
+        padding: 0 5rem;
+    }
+
     &__title {
         @include mixins.mobile-header-text;
         @include mixins.mobile-header-padding;
@@ -27,13 +31,10 @@
     }
 
     &__item {
-      height: 12rem; 
       padding-bottom: 1rem;
       width: 100%;
-      object-position: 50% 50%;
 
       @include mixins.tablet {
-          height: 8rem;
           width: 30%;
       }
     }
