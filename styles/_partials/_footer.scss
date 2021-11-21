@@ -3,5 +3,35 @@
 @use './global';
 
 .footer {
-    background-color: gray;
+    background-color: variables.$color-bandsite-black;
+    padding-left: 1rem;
+
+    &__title {
+        margin: 0;
+        color: variables.$color-white;
+        @include mixins.mobile-header-text;
+        @include mixins.mobile-header-padding;
+    }
+
+    &__icon {
+        padding-right: 2rem;
+    }
+
+    &__person {
+        color: variables.$color-white;
+    }
+
+    &__contact-info {
+        color: variables.$color-silver;
+    }
+
+    &__logo-image {
+        margin-top: 4rem;
+    }
+
+    &__copyright {
+        margin: 0;
+        padding: 1rem 0;
+        color: variables.$color-silver;
+    }
 }

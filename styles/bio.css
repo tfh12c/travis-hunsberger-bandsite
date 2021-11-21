@@ -330,5 +330,32 @@ body {
 }
 
 .footer {
-  background-color: gray;
+  background-color: #323232;
+  padding-left: 1rem;
+}
+.footer__title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.footer__icon {
+  padding-right: 2rem;
+}
+.footer__person {
+  color: #FFFFFF;
+}
+.footer__contact-info {
+  color: #AFAFAF;
+}
+.footer__logo-image {
+  margin-top: 4rem;
+}
+.footer__copyright {
+  margin: 0;
+  padding: 1rem 0;
+  color: #AFAFAF;
 }/*# sourceMappingURL=bio.css.map */
