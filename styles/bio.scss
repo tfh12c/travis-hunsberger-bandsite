@@ -1,8 +1,11 @@
+/* Utilities */
 @use './_partials/mixins';
+@use './_partials/typography' as *;
+@use './_partials/global';
+
+/* Page Components */
 @use './_partials/header';
 @use './_partials/hero';
 @use './_partials/about';
 @use './_partials/gallery';
-@use './_partials/typography' as *;
-@use './_partials/global';
 @use './_partials/footer';

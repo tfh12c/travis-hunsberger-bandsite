@@ -64,7 +64,7 @@
             font-weight: 700;
         }
 
-        &--hover:hover {
+        &:hover {
             color: variables.$color-white;
             border-bottom: .25rem solid variables.$color-white;
         }
@@ -80,7 +80,6 @@
 
         @include mixins.desktop {
             height: 2rem;
-            @include mixins.body-text;
         }
     }
 

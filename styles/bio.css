@@ -94,7 +94,7 @@ body {
   border-bottom: 0.25rem solid #FFFFFF;
   font-weight: 700;
 }
-.header__navigation-link--hover:hover {
+.header__navigation-link:hover {
   color: #FFFFFF;
   border-bottom: 0.25rem solid #FFFFFF;
 }
@@ -112,9 +112,6 @@ body {
 @media (min-width: 1280px) {
   .header__navigation-link {
     height: 2rem;
-    font-size: 14px;
-    line-height: 1.375rem;
-    font-weight: 400;
   }
 }
 @media (min-width: 768px) {
@@ -462,4 +459,7 @@ body {
     font-weight: 400;
     padding: 3rem 0 3rem 2rem;
   }
-}/*# sourceMappingURL=bio.css.map */
+}
+
+/* Utilities */
+/* Page Components *//*# sourceMappingURL=bio.css.map */
