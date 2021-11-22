@@ -332,6 +332,12 @@ body {
 .footer {
   background-color: #323232;
   padding-left: 1rem;
+  /* Social Media Icons */
+  /* Div containing Title and Socials icons to align */
+  /* Div containing Title and Socials + BANDSITE logo to align */
+  /* Hides Tablet/Desktop BANDSITE logo from mobile view */
+  /* BANDSITE logo for Tablet/Desktop */
+  /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
 }
 .footer__title {
   margin: 0;
@@ -342,20 +348,95 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
+@media (min-width: 768px) {
+  .footer__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 .footer__icon {
   padding-right: 2rem;
 }
+@media (min-width: 768px) {
+  .footer__icon {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer__socials-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer__social-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer__logo-link {
+  display: none;
+  /* Makes Tablet/Desktop BANDSITE logo visible */
+}
+@media (min-width: 768px) {
+  .footer__logo-link {
+    display: block;
+  }
+}
+.footer__mobile-logo-image {
+  margin-top: 4rem;
+  /* Hides Mobile BANDSITE logo from Tablet/Desktop view */
+}
+@media (min-width: 768px) {
+  .footer__mobile-logo-image {
+    display: none;
+  }
+}
+.footer__logo-image {
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+@media (min-width: 768px) {
+  .footer__card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .footer__person {
   color: #FFFFFF;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .footer__person {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
 }
 .footer__contact-info {
   color: #AFAFAF;
-}
-.footer__logo-image {
-  margin-top: 4rem;
 }
 .footer__copyright {
   margin: 0;
   padding: 1rem 0;
   color: #AFAFAF;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .footer__copyright {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    padding: 3rem 0 3rem 2rem;
+  }
 }/*# sourceMappingURL=bio.css.map */

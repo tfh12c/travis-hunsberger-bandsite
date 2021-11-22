@@ -11,27 +11,96 @@
         color: variables.$color-white;
         @include mixins.mobile-header-text;
         @include mixins.mobile-header-padding;
+
+        @include mixins.tablet {
+            @include mixins.section-header-text;
+            @include mixins.header-padding;
+            padding-left: 2rem;
+            margin-right: 2rem;
+        }
     }
 
+    /* Social Media Icons */
     &__icon {
         padding-right: 2rem;
+
+        @include mixins.tablet {
+            padding-top: 1rem;
+        }
+    }
+
+    /* Div containing Title and Socials icons to align */
+    &__socials-container {
+        @include mixins.tablet {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    /* Div containing Title and Socials + BANDSITE logo to align */
+    &__social-logo-container {
+        @include mixins.tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    /* Hides Tablet/Desktop BANDSITE logo from mobile view */
+    &__logo-link {
+        display: none;
+
+        /* Makes Tablet/Desktop BANDSITE logo visible */
+        @include mixins.tablet {
+            display: block;
+        }
+    }
+
+    &__mobile-logo-image {
+        margin-top: 4rem;
+
+        /* Hides Mobile BANDSITE logo from Tablet/Desktop view */
+        @include mixins.tablet {
+            display: none;
+        }
+    }
+
+    /* BANDSITE logo for Tablet/Desktop */
+    &__logo-image {
+        padding-top: 1rem;
+        padding-right: 3rem;
+    }
+
+    &__card-container {
+        @include mixins.tablet{
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     &__person {
         color: variables.$color-white;
+        @include mixins.mobile-body-footer-text;
+
+        @include mixins.tablet {
+            @include mixins.footer-text;
+        }
     }
 
+    /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
     &__contact-info {
         color: variables.$color-silver;
-    }
-
-    &__logo-image {
-        margin-top: 4rem;
     }
 
     &__copyright {
         margin: 0;
         padding: 1rem 0;
         color: variables.$color-silver;
+        @include mixins.mobile-body-footer-text;
+
+        @include mixins.tablet {
+            @include mixins.footer-text;
+            padding: 3rem 0 3rem 2rem;
+        }
     }
 }
