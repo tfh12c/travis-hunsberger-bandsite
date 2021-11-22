@@ -6,8 +6,12 @@
     background-color: variables.$color-alabaster;
     padding: 0 1rem;
 
+    @include mixins.tablet {
+        padding-bottom: 2.25rem;
+    }
+
     @include mixins.desktop {
-        padding: 0 5rem;
+        padding: 0 5rem 2.25rem 5rem;
     }
 
     &__title {
@@ -22,11 +26,13 @@
         }
     }
 
+    /* Changes gallery images to flex wrap and center, gap for layout grid */
     &__container {
         @include mixins.tablet {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
+            gap: 1.5rem;
         }
     }
 
@@ -36,6 +42,7 @@
 
       @include mixins.tablet {
           width: 30%;
+          padding-bottom: 0;
       }
     }
 }

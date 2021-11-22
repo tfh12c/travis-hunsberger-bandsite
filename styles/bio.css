@@ -165,17 +165,17 @@ body {
 }
 
 .about {
-  padding: 0 1rem;
+  padding: 0 1rem 1rem 1rem;
   /* About the Musicians */
   /* Holds all elements under section title */
   /* Quote beneath section picture */
   /* Attributing quote from Bryan Teddy */
-  /* The Bees Knees body text */
+  /* Puts body text side by side */
   /* Adds padding between side by side text */
 }
 @media (min-width: 768px) {
   .about {
-    padding-bottom: 1rem;
+    padding-bottom: 2.25rem;
   }
 }
 .about__title {
@@ -243,9 +243,6 @@ body {
     margin-top: -1rem;
   }
 }
-.about__body-text-container {
-  /* Puts body text side by side */
-}
 @media (min-width: 768px) {
   .about__body-text-container {
     display: flex;
@@ -265,6 +262,8 @@ body {
   }
 }
 .about__body-text {
+  margin: 0;
+  padding-top: 1rem;
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-weight: 400;
@@ -285,10 +284,16 @@ body {
 .gallery {
   background-color: #FAFAFA;
   padding: 0 1rem;
+  /* Changes gallery images to flex wrap and center, gap for layout grid */
+}
+@media (min-width: 768px) {
+  .gallery {
+    padding-bottom: 2.25rem;
+  }
 }
 @media (min-width: 1280px) {
   .gallery {
-    padding: 0 5rem;
+    padding: 0 5rem 2.25rem 5rem;
   }
 }
 .gallery__title {
@@ -313,7 +318,8 @@ body {
   .gallery__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
 .gallery__item {
@@ -323,6 +329,7 @@ body {
 @media (min-width: 768px) {
   .gallery__item {
     width: 30%;
+    padding-bottom: 0;
   }
 }
 
@@ -330,10 +337,12 @@ body {
   background-color: #323232;
   padding-left: 1rem;
   /* Social Media Icons */
-  /* Div containing Title and Socials icons to align */
-  /* Div containing Title and Socials + BANDSITE logo to align */
+  /* Div containing Title and Socials icons to center align */
+  /* Div containing Title and Socials + BANDSITE logo to center align and space between */
   /* Hides Tablet/Desktop BANDSITE logo from mobile view */
+  /* BANDSITE logo for mobile */
   /* BANDSITE logo for Tablet/Desktop */
+  /* Holds footer contact cards and styling */
   /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
 }
 @media (min-width: 1280px) {

@@ -4,10 +4,10 @@
 @use './typography' as *;
 
 .about {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem 1rem;
 
     @include mixins.tablet {
-        padding-bottom: 1rem;
+        padding-bottom: 2.25rem;
     }
 
     /* About the Musicians */
@@ -45,9 +45,7 @@
 
     /* Quote beneath section picture */
     &__subheader {
-        font-size: .875rem;
-        line-height: 1.375rem;
-        font-weight: 600;
+        @include mixins.mobile-subheader-text;
 
         @include mixins.tablet {
             @include mixins.subheader-text;
@@ -67,9 +65,8 @@
         }
     }
 
-    /* The Bees Knees body text */
+    /* Puts body text side by side */
     &__body-text-container {
-        /* Puts body text side by side */
         @include mixins.tablet {
             display: flex;
         }
@@ -85,6 +82,8 @@
     }
 
     &__body-text {
+        margin: 0;
+        padding-top: 1rem;
         @include mixins.mobile-body-footer-text;
 
         @include mixins.tablet {

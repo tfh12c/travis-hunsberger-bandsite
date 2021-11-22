@@ -33,7 +33,7 @@
         }
     }
 
-    /* Div containing Title and Socials icons to align */
+    /* Div containing Title and Socials icons to center align */
     &__socials-container {
         @include mixins.tablet {
             display: flex;
@@ -41,7 +41,7 @@
         }
     }
 
-    /* Div containing Title and Socials + BANDSITE logo to align */
+    /* Div containing Title and Socials + BANDSITE logo to center align and space between */
     &__social-logo-container {
         @include mixins.tablet {
             display: flex;
@@ -60,6 +60,7 @@
         }
     }
 
+    /* BANDSITE logo for mobile */
     &__mobile-logo-image {
         margin-top: 4rem;
 
@@ -75,6 +76,7 @@
         padding-right: 3rem;
     }
 
+    /* Holds footer contact cards and styling */
     &__card-container {
         @include mixins.tablet{
             display: flex;
