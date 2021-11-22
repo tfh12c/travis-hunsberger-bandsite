@@ -6,6 +6,10 @@
     background-color: variables.$color-bandsite-black;
     padding-left: 1rem;
 
+    @include mixins.desktop {
+        padding: 0 5rem 0 5rem;
+    }
+
     &__title {
         margin: 0;
         color: variables.$color-white;
@@ -76,6 +80,12 @@
             display: flex;
             justify-content: space-around;
         }
+
+        @include mixins.desktop { 
+            justify-content: flex-start;
+            column-gap: 3rem;
+            padding-left: 2rem;
+        }
     }
 
     &__person {
@@ -90,6 +100,11 @@
     /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
     &__contact-info {
         color: variables.$color-silver;
+        @include mixins.mobile-body-footer-text;
+
+        @include mixins.tablet {
+            @include mixins.footer-text;
+        }
     }
 
     &__copyright {

@@ -339,6 +339,11 @@ body {
   /* BANDSITE logo for Tablet/Desktop */
   /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
 }
+@media (min-width: 1280px) {
+  .footer {
+    padding: 0 5rem 0 5rem;
+  }
+}
 .footer__title {
   margin: 0;
   color: #FFFFFF;
@@ -408,6 +413,14 @@ body {
     justify-content: space-around;
   }
 }
+@media (min-width: 1280px) {
+  .footer__card-container {
+    justify-content: flex-start;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    padding-left: 2rem;
+  }
+}
 .footer__person {
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -423,6 +436,16 @@ body {
 }
 .footer__contact-info {
   color: #AFAFAF;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .footer__contact-info {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
 }
 .footer__copyright {
   margin: 0;
