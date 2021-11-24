@@ -1,0 +1,54 @@
+@use './mixins';
+@use './variables';
+@use './global';
+
+/* Hero background image and sizing here */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   background: url('../assets/Images/hero-shows.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 52vh;
+   box-shadow: inset 0 0 0 1000px rgba(50,50,50,.5);
+
+   @include mixins.tablet {
+       height: 50vh;
+   }
+
+   @include mixins.desktop {
+       height: 75vh;
+       background-size: cover;
+   }
+
+   /* Album Name */
+   &__album {
+       color: variables.$color-white;
+       @include mixins.mobile-body-footer-text;
+       padding-top: 1.5rem;
+       padding-left: 1rem;
+   }
+
+   /* Song Title */
+   &__title {
+       color: variables.$color-white;
+       padding-left: 1rem;
+       @include mixins.mobile-header-text;
+
+       @include mixins.tablet {
+           @include mixins.page-header-text;
+           padding-left: 4rem;
+       }
+
+       @include mixins.desktop {
+           padding-left: 10rem;
+       }
+   }
+
+   &__soundcloud {
+       margin-left: auto;
+       margin-right: auto;
+   }
+}

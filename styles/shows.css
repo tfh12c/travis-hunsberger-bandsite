@@ -1,0 +1,319 @@
+/* Media Breakpoints */
+/* Colors and Backgrounds */
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/Font/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../assets/Font/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* Header Navigation reset list */
+/* Mobile Header Padding */
+/* Tablet and Desktop Header Padding */
+/* Mobile Text Styles */
+/* Tablet and Desktop Text Styles */
+body {
+  margin: 0;
+  font-family: "AvenirNext LT Pro";
+  color: #323232;
+}
+
+.header {
+  background-color: #323232;
+  /* This holds the BANDSITE logo */
+  /* UL holding nav links with reset list formatting */
+  /* Sets Biography and Shows to 50% of screen on mobile */
+  /* Styling of Biography and Shows link */
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    padding-top: 1rem;
+  }
+}
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+@media (min-width: 768px) {
+  .header__logo-container {
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header__logo-container {
+    padding-left: 8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.header__navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .header__navigation-list {
+    padding-left: 4rem;
+    padding-bottom: 0;
+  }
+}
+.header__navigation-list-item {
+  width: 50%;
+}
+.header__navigation-link {
+  display: block;
+  text-decoration: none;
+  color: #E1E1E1;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.header__navigation-link--active {
+  color: #FFFFFF;
+  border-bottom: 0.25rem solid #FFFFFF;
+  font-weight: 700;
+}
+.header__navigation-link:hover {
+  color: #FFFFFF;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+@media (min-width: 768px) {
+  .header__navigation-link {
+    margin-right: 4rem;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5em;
+    font-size: 14px;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1280px) {
+  .header__navigation-link {
+    height: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .header__logo-image {
+    padding-top: 0.5rem;
+  }
+}
+
+/* Hero background image and sizing here */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("../assets/Images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 52vh;
+  box-shadow: inset 0 0 0 1000px rgba(50, 50, 50, 0.5);
+  /* Album Name */
+  /* Song Title */
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 75vh;
+    background-size: cover;
+  }
+}
+.hero__album {
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+}
+.hero__title {
+  color: #FFFFFF;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+    padding-left: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__title {
+    padding-left: 10rem;
+  }
+}
+.hero__soundcloud {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background-color: #323232;
+  padding-left: 1rem;
+  /* Social Media Icons */
+  /* Div containing Title and Socials icons to center align */
+  /* Div containing Title and Socials + BANDSITE logo to center align and space between */
+  /* Hides Tablet/Desktop BANDSITE logo from mobile view */
+  /* BANDSITE logo for mobile */
+  /* BANDSITE logo for Tablet/Desktop */
+  /* Holds footer contact cards and styling */
+  /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding: 0 5rem 0 5rem;
+  }
+}
+.footer__title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .footer__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.footer__icon {
+  padding-right: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__icon {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer__socials-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer__social-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer__logo-link {
+  display: none;
+  /* Makes Tablet/Desktop BANDSITE logo visible */
+}
+@media (min-width: 768px) {
+  .footer__logo-link {
+    display: block;
+  }
+}
+.footer__mobile-logo-image {
+  margin-top: 4rem;
+  /* Hides Mobile BANDSITE logo from Tablet/Desktop view */
+}
+@media (min-width: 768px) {
+  .footer__mobile-logo-image {
+    display: none;
+  }
+}
+.footer__logo-image {
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+@media (min-width: 768px) {
+  .footer__card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__card-container {
+    justify-content: flex-start;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    padding-left: 2rem;
+  }
+}
+.footer__person {
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .footer__person {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+}
+.footer__contact-info {
+  color: #AFAFAF;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .footer__contact-info {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+}
+.footer__copyright {
+  margin: 0;
+  padding: 1rem 0;
+  color: #AFAFAF;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .footer__copyright {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    padding: 3rem 0 3rem 2rem;
+  }
+}
+
+/* Utilities */
+/* Page Components *//*# sourceMappingURL=shows.css.map */
