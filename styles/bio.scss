@@ -1,5 +1,6 @@
 /* Utilities */
 @use './_partials/mixins';
+@use './_partials/variables';
 @use './_partials/typography' as *;
 @use './_partials/global';
 
@@ -16,6 +17,7 @@
 
     &__title {
         @include mixins.mobile-header-padding;
+        margin: 0;
     }
 
     /* Holds the entire form, display flex to bring avatar image for text div into alignment */
@@ -23,21 +25,40 @@
         display: flex;
     }
 
+    /* Adds margin for space from avatar, set div width to 75% of page */
     &__form-text-container {
         margin-left: 1rem;
         width: 75%;
     }
 
     &__form-avatar {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-top: 1.5rem;
+        @include mixins.mobile-avatar;
+        margin-top: 2rem;
     }
 
     /* Styling for the form inputs */
     &__form-field {
         @include mixins.mobile-form-field;
+        margin-top: .25rem;
+        margin-bottom: 1rem;
+    }
+
+    &__form-label {
+        color: variables.$color-silver;
+    }
+
+    &__form-button {
+        margin-bottom: 1rem;
+        border: none;
+        height: 2.5rem;
+        width: 108%;
+        border-radius: .25rem;
+        background-color: variables.$color-bandsite-black;
+        color: variables.$color-white;
+
+        &:hover {
+            background-color: variables.$color-bandsite-darkblack;
+        }
     }
 
 }

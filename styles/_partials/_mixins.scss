@@ -33,13 +33,36 @@
 }
 
 
-/* Form Field Styling */
+/* Mobile Form Field Styling */
 @mixin mobile-form-field {
     min-height: 2.25rem;
     width: 100%;
     border-radius: .25rem;
     border: 1px solid variables.$color-mercury;
     padding: .75rem;
+}
+
+/* Tablet/Desktop Form Field Styling */
+@mixin form-field {
+    min-height: 3rem;
+    width: 100%;
+    border-radius: .25rem;
+    border: 1px solid variables.$color-mercury;
+    padding: 1rem;
+}
+
+/* Mobile Avatar for comments */
+@mixin mobile-avatar {
+    max-height: 2.25rem;
+    max-width: 2.25rem;
+    border-radius: 50%;
+}
+
+/* Tablet/Desktop for comments */
+@mixin avatar {
+    max-height: 3rem;
+    max-width: 3rem;
+    border-radius: 50%;
 }
 
 
