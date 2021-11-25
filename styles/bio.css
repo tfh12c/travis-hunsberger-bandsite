@@ -24,6 +24,7 @@
 /* Header Navigation reset list */
 /* Mobile Header Padding */
 /* Tablet and Desktop Header Padding */
+/* Form Field Styling */
 /* Mobile Text Styles */
 /* Tablet and Desktop Text Styles */
 body {
@@ -470,4 +471,33 @@ body {
 }
 
 /* Utilities */
-/* Page Components *//*# sourceMappingURL=bio.css.map */
+/* Page Components */
+.comments {
+  padding: 0 1rem;
+  /* Holds the entire form, display flex to bring avatar image for text div into alignment */
+  /* Styling for the form inputs */
+}
+.comments__title {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.comments__form-container {
+  display: flex;
+}
+.comments__form-text-container {
+  margin-left: 1rem;
+  width: 75%;
+}
+.comments__form-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+}
+.comments__form-field {
+  min-height: 2.25rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #E1E1E1;
+  padding: 0.75rem;
+}/*# sourceMappingURL=bio.css.map */
