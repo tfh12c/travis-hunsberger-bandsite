@@ -509,9 +509,11 @@ body {
   padding: 0.75rem;
   margin-top: 0.25rem;
   margin-bottom: 1rem;
+  background-color: #FAFAFA;
 }
 .comments__form-field:focus {
-  border: 1px solid #323232;
+  outline: none !important;
+  border-color: #323232;
 }
 .comments__form-label {
   color: #AFAFAF;
@@ -535,6 +537,7 @@ body {
 }
 .comment__text-container {
   padding: 0 1rem;
+  min-width: 90%;
 }
 .comment__name-date-container {
   display: flex;
@@ -549,4 +552,5 @@ body {
   max-width: 2.25rem;
   border-radius: 50%;
   margin-top: 2rem;
+  background-color: #E1E1E1;
 }/*# sourceMappingURL=bio.css.map */

@@ -43,9 +43,11 @@
         @include mixins.mobile-form-field;
         margin-top: .25rem;
         margin-bottom: 1rem;
+        background-color: variables.$color-alabaster;
 
         &:focus {
-            border: 1px solid variables.$color-bandsite-black;
+            outline: none !important;
+            border-color: variables.$color-bandsite-black;
         }
     }
 
@@ -75,6 +77,7 @@
 
     &__text-container {
         padding: 0 1rem;
+        min-width: 90%;
     }
 
     &__name-date-container {
@@ -90,5 +93,6 @@
     &__avatar {
         @include mixins.mobile-avatar;
         margin-top: 2rem;
+        background-color: variables.$color-mercury;
     }
 }

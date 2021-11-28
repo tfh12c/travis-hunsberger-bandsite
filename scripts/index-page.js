@@ -10,7 +10,7 @@ function displayComment(comment) {
 
     const commentAvatar = document.createElement('img');
     commentAvatar.classList.add('comment__avatar');
-    commentAvatar.setAttribute('src', "//:0")
+    commentAvatar.setAttribute('src', "//:0") // Not sure how to get this to work without having the broken image icon. All research said img src would need to be //:0
     cardEl.appendChild(commentAvatar);
 
     const commentTextContainer = document.createElement('div');
@@ -51,12 +51,31 @@ function renderComments() {
     }
 }
 
+const commentName = document.querySelector('.comments__form-fullname');
+const commentText = document.querySelector('.comments__form-comment');
+
+function nameValidation() {
+    if (!commentName.value) {
+        commentName.style.border = '1px solid';
+        commentName.style.borderColor = '#D22D2D';
+    }
+}
+
+function commentValidation() {
+    if (!commentText.value) {
+        commentText.style.border = '1px solid';
+        commentText.style.borderColor = '#D22D2D';
+    }
+}
+
 function handleFormSubmit(event) {
     event.preventDefault();
 
+    nameValidation();
+    commentValidation();
+
     const fullName = document.getElementById('fullName').value;
     if (fullName === "") {
-        document.getElementById
         alert("Please enter your name");
         return false;
     }
@@ -81,11 +100,9 @@ function handleFormSubmit(event) {
         comment: event.target.comment.value
     };
 
-
     comments.unshift(commentData);
     document.querySelector('.comments__form').reset();
     renderComments();
-    
 }
 
 const formEl = document.querySelector('.comments__form');
