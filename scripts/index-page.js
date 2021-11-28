@@ -8,20 +8,33 @@ function displayComment(comment) {
     const cardEl = document.createElement('article');
     cardEl.classList.add('comment');
 
+    const commentAvatar = document.createElement('img');
+    commentAvatar.classList.add('comment__avatar');
+    commentAvatar.setAttribute('src', "//:0")
+    cardEl.appendChild(commentAvatar);
+
+    const commentTextContainer = document.createElement('div');
+    commentTextContainer.classList.add('comment__text-container');
+    cardEl.appendChild(commentTextContainer);
+
+    const commentNameDateContainer = document.createElement('div');
+    commentNameDateContainer.classList.add('comment__name-date-container');
+    commentTextContainer.appendChild(commentNameDateContainer);
+
     const commentName = document.createElement('h3');
-    commentName.classList.add('comment-name');
+    commentName.classList.add('comment__name');
     commentName.innerText = comment.name;
-    cardEl.appendChild(commentName);
+    commentNameDateContainer.appendChild(commentName);
 
     const commentDate = document.createElement('span')
-    commentDate.classList.add('comment-date');
+    commentDate.classList.add('comment__date');
     commentDate.innerText = comment.date;
-    cardEl.appendChild(commentDate);
+    commentNameDateContainer.appendChild(commentDate);
 
     const commentText = document.createElement('p');
-    commentText.classList.add('comment-text');
+    commentText.classList.add('comment__text');
     commentText.innerText = comment.comment;
-    cardEl.appendChild(commentText);
+    commentTextContainer.appendChild(commentText);
 
     return cardEl;
 }
@@ -74,13 +87,6 @@ function handleFormSubmit(event) {
     renderComments();
     
 }
-
-// function commentImage () {
-//     const image = document.createElement('img');
-//     image.classList.add('comment-image');
-//     image.setAttribute('src', "//:0");
-//     document.getElementsByClassName('comment').appendChild(image); 
-// }
 
 const formEl = document.querySelector('.comments__form');
 formEl.addEventListener('submit', handleFormSubmit);

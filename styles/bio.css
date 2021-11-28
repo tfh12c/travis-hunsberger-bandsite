@@ -477,6 +477,8 @@ body {
 /* Page Components */
 .comments {
   padding: 0 1rem;
+  border-bottom: 1px solid #E1E1E1;
+  margin-bottom: 1rem;
   /* Holds the entire form, display flex to bring avatar image for text div into alignment */
   /* Adds margin for space from avatar, set div width to 75% of page */
   /* Styling for the form inputs */
@@ -525,4 +527,26 @@ body {
 }
 .comments__form-button:hover {
   background-color: #000000;
+}
+
+.comment {
+  display: flex;
+  border-top: 1px solid #E1E1E1;
+}
+.comment__text-container {
+  padding: 0 1rem;
+}
+.comment__name-date-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comment__name {
+  margin-bottom: 0;
+}
+.comment__avatar {
+  max-height: 2.25rem;
+  max-width: 2.25rem;
+  border-radius: 50%;
+  margin-top: 2rem;
 }/*# sourceMappingURL=bio.css.map */
