@@ -2,8 +2,37 @@
 @use './_partials/mixins';
 @use './_partials/typography' as *;
 @use './_partials/global';
+@use './_partials/variables';
 
 /* Page Components */
 @use './_partials/header';
 @use './_partials/hero-shows';
 @use './_partials/footer';
+
+
+.shows {
+    padding: 0 1rem;
+
+    &__card {
+        border-bottom: 1px solid variables.$color-mercury;
+    }
+
+    &__logistics {
+        color: variables.$color-silver;
+    }
+
+    &__date {
+        font-weight: 700;
+    }
+
+    &__button {
+        margin-bottom: 1rem;
+        border: none;
+        height: 2.5rem;
+        width: 90%;
+        border-radius: .25rem;
+        background-color: variables.$color-bandsite-black;
+        color: variables.$color-white;
+    }
+
+}

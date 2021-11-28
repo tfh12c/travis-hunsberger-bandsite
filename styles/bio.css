@@ -508,6 +508,9 @@ body {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
 }
+.comments__form-field:focus {
+  border: 1px solid #323232;
+}
 .comments__form-label {
   color: #AFAFAF;
 }

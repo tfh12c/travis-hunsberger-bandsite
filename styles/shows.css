@@ -357,4 +357,25 @@ body {
 }
 
 /* Utilities */
-/* Page Components *//*# sourceMappingURL=shows.css.map */
+/* Page Components */
+.shows {
+  padding: 0 1rem;
+}
+.shows__card {
+  border-bottom: 1px solid #E1E1E1;
+}
+.shows__logistics {
+  color: #AFAFAF;
+}
+.shows__date {
+  font-weight: 700;
+}
+.shows__button {
+  margin-bottom: 1rem;
+  border: none;
+  height: 2.5rem;
+  width: 90%;
+  border-radius: 0.25rem;
+  background-color: #323232;
+  color: #FFFFFF;
+}/*# sourceMappingURL=shows.css.map */

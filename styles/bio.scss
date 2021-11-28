@@ -41,6 +41,10 @@
         @include mixins.mobile-form-field;
         margin-top: .25rem;
         margin-bottom: 1rem;
+
+        &:focus {
+            border: 1px solid variables.$color-bandsite-black;
+        }
     }
 
     &__form-label {
