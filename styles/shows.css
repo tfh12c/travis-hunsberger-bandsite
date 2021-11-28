@@ -358,9 +358,6 @@ body {
 
 /* Utilities */
 /* Page Components */
-.shows {
-  padding: 0 1rem;
-}
 .shows__card {
   border-bottom: 1px solid #E1E1E1;
 }

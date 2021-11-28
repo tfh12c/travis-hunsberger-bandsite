@@ -31,12 +31,12 @@ const shows = [
     },
 ];
 
-const showElement = document.querySelector('.shows__list');
+const showMobileElement = document.querySelector('.shows__mobile-list');
 
-function createCard(show) {
+function createMobileCard(show) {
     // card element
     const card = document.createElement('article');
-    card.classList.add('shows__card');
+    card.classList.add('shows__mobile-card');
 
     const dateHeader = document.createElement('p')
     dateHeader.classList.add('shows__logistics');
@@ -78,9 +78,9 @@ function createCard(show) {
 }
 
 for (let i = 0; i < shows.length; i++) {
-    const showCard = createCard(shows[i]);
+    const showMobileCard = createMobileCard(shows[i]);
 
-    showElement.appendChild(showCard);
+    showMobileElement.appendChild(showMobileCard);
 }
 
 
