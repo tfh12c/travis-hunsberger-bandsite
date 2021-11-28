@@ -136,7 +136,7 @@ function createCard(show) {
 
     // pulls venue from shows array
     const venue = document.createElement('p');
-    venue.classList.add('shows__date');
+    venue.classList.add('shows__venue');
     venue.innerText = show.venue;
     card.appendChild(venue);
 

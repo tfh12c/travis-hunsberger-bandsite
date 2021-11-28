@@ -364,6 +364,11 @@ body {
   /* Hides tablet/desktop shows list from mobile */
   /* shows card for tablet/desktop */
 }
+@media (min-width: 768px) {
+  .shows {
+    padding-bottom: 2rem;
+  }
+}
 .shows__header {
   margin: 0;
   padding: 1.5rem 0 0 1rem;
@@ -395,10 +400,22 @@ body {
 }
 .shows__card {
   display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.125rem;
+  margin: 0 1rem;
   border-bottom: 1px solid #E1E1E1;
+  /* LVHA order hover has to be before active */
+  /* LVHA order active has to be after hover */
+}
+.shows__card:hover {
+  background-color: #FAFAFA;
+}
+.shows__card:active {
+  background-color: #E1E1E1;
 }
 .shows__logistics-container {
   display: flex;
+  padding: 1.5rem 0 0 1.125rem;
 }
 .shows__logistics {
   color: #AFAFAF;

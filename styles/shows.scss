@@ -12,6 +12,10 @@
 
 .shows {
     padding-bottom: 1rem;
+
+    @include mixins.tablet {
+        padding-bottom: 2rem;
+    }
     
     &__header {
         margin: 0;
@@ -52,15 +56,35 @@
     /* shows card for tablet/desktop */
     &__card {
         display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 1.125rem;
+        margin: 0 1rem;
         border-bottom: 1px solid variables.$color-mercury;
+
+        /* LVHA order hover has to be before active */
+        &:hover {
+            background-color: variables.$color-alabaster;
+        }
+
+        /* LVHA order active has to be after hover */
+        &:active {
+            background-color: variables.$color-mercury;
+        }
     }
 
     &__logistics-container {
         display: flex;
+        padding: 1.5rem 0 0 1.125rem;
     }
 
     &__logistics {
         color: variables.$color-silver;
+    }
+
+    &__venue {
+        @include mixins.tablet {
+           
+        }
     }
 
     &__date {
