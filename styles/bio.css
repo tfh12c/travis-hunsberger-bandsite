@@ -500,7 +500,7 @@ p {
 /* Gallery Section */
 .gallery {
   background-color: #FAFAFA;
-  padding: 0 1rem;
+  padding-left: 1rem;
   /* Changes gallery images to flex wrap and center, gap for layout grid */
 }
 @media (min-width: 48rem) {
@@ -526,7 +526,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
   }
 }
 .gallery__item {
@@ -537,6 +536,7 @@ p {
   .gallery__item {
     width: 30%;
     padding-bottom: 0;
+    margin: 0 1rem 1rem 0;
   }
 }
 
