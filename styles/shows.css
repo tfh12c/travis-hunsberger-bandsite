@@ -366,7 +366,7 @@ body {
 }
 @media (min-width: 768px) {
   .shows {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 }
 .shows__header {
@@ -384,6 +384,12 @@ body {
 @media (min-width: 768px) {
   .shows__list {
     display: block;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__list {
+    padding-left: 15rem;
+    padding-right: 5rem;
   }
 }
 .shows__mobile-card {
@@ -415,10 +421,14 @@ body {
 }
 .shows__logistics-container {
   display: flex;
+  justify-content: space-between;
+  width: 60%;
   padding: 1.5rem 0 0 1.125rem;
+  margin-left: 2rem;
 }
 .shows__logistics {
   color: #AFAFAF;
+  font-weight: 600;
 }
 .shows__date {
   font-weight: 700;

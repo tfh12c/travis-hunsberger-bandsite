@@ -14,7 +14,7 @@
     padding-bottom: 1rem;
 
     @include mixins.tablet {
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
     }
     
     &__header {
@@ -35,6 +35,11 @@
 
         @include mixins.tablet {
             display: block;
+        }
+
+        @include mixins.desktop {
+            padding-left: 15rem;
+            padding-right: 5rem;
         }
     }
 
@@ -74,11 +79,15 @@
 
     &__logistics-container {
         display: flex;
+        justify-content: space-between;
+        width: 60%;
         padding: 1.5rem 0 0 1.125rem;
+        margin-left: 2rem;
     }
 
     &__logistics {
         color: variables.$color-silver;
+        font-weight: 600;
     }
 
     &__venue {

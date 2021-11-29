@@ -14,12 +14,16 @@
 
 .comments {
     padding: 0 1rem;
-    border-bottom: 1px solid variables.$color-mercury;
     margin-bottom: 1rem;
 
     @include mixins.tablet {
         padding: 0 3rem;
         margin-bottom: 2rem;
+    }
+
+    @include mixins.desktop {
+        padding: 0 6rem;
+        margin-bottom: 3rem;
     }
 
     &__title {
@@ -33,6 +37,10 @@
 
         @include mixins.tablet {
             padding: 0 2rem;
+        }
+
+        @include mixins.desktop {
+            padding: 0 10rem;
         }
     }
 
@@ -94,9 +102,14 @@
 .comment {
     display: flex;
     border-top: 1px solid variables.$color-mercury;
+    border-bottom: 1px solid variables.$color-mercury;
 
     @include mixins.tablet {
         margin: 0 2rem;
+    }
+
+    @include mixins.desktop {
+        margin: 0 10rem;
     }
 
     &__text-container {
@@ -112,6 +125,18 @@
 
     &__name {
         margin-bottom: 0;
+
+        @include mixins.tablet {
+            margin-top: 2rem;
+        }
+    }
+
+    &__date {
+        color: variables.$color-silver;
+    }
+
+    &__text {
+        margin-bottom: 2rem;
     }
 
     &__avatar {

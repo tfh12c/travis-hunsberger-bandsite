@@ -477,7 +477,6 @@ body {
 /* Page Components */
 .comments {
   padding: 0 1rem;
-  border-bottom: 1px solid #E1E1E1;
   margin-bottom: 1rem;
   /* Holds the entire form, display flex to bring avatar image for text div into alignment */
   /* Adds margin for space from avatar, set div width to 75% of page */
@@ -487,6 +486,12 @@ body {
   .comments {
     padding: 0 3rem;
     margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comments {
+    padding: 0 6rem;
+    margin-bottom: 3rem;
   }
 }
 .comments__title {
@@ -500,6 +505,11 @@ body {
 @media (min-width: 768px) {
   .comments__form-container {
     padding: 0 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comments__form-container {
+    padding: 0 10rem;
   }
 }
 .comments__form-text-container {
@@ -558,10 +568,16 @@ body {
 .comment {
   display: flex;
   border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
 }
 @media (min-width: 768px) {
   .comment {
     margin: 0 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment {
+    margin: 0 10rem;
   }
 }
 .comment__text-container {
@@ -575,6 +591,17 @@ body {
 }
 .comment__name {
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .comment__name {
+    margin-top: 2rem;
+  }
+}
+.comment__date {
+  color: #AFAFAF;
+}
+.comment__text {
+  margin-bottom: 2rem;
 }
 .comment__avatar {
   max-height: 2.25rem;
