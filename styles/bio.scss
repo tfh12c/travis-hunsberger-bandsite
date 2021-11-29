@@ -17,6 +17,11 @@
     border-bottom: 1px solid variables.$color-mercury;
     margin-bottom: 1rem;
 
+    @include mixins.tablet {
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+    }
+
     &__title {
         @include mixins.mobile-header-padding;
         margin: 0;
@@ -25,12 +30,21 @@
     /* Holds the entire form, display flex to bring avatar image for text div into alignment */
     &__form-container {
         display: flex;
+
+        @include mixins.tablet {
+            padding: 0 2rem;
+        }
     }
 
     /* Adds margin for space from avatar, set div width to 75% of page */
     &__form-text-container {
         margin-left: 1rem;
         width: 75%;
+
+        @include mixins.tablet {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__form-avatar {
@@ -67,6 +81,12 @@
         &:hover {
             background-color: variables.$color-bandsite-darkblack;
         }
+
+        @include mixins.tablet {
+            width: 10rem;
+            align-self: flex-end;
+            margin-left: 2rem;
+        }
     }
 
 }
@@ -74,6 +94,10 @@
 .comment {
     display: flex;
     border-top: 1px solid variables.$color-mercury;
+
+    @include mixins.tablet {
+        margin: 0 2rem;
+    }
 
     &__text-container {
         padding: 0 1rem;

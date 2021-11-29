@@ -483,6 +483,12 @@ body {
   /* Adds margin for space from avatar, set div width to 75% of page */
   /* Styling for the form inputs */
 }
+@media (min-width: 768px) {
+  .comments {
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+  }
+}
 .comments__title {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -491,9 +497,20 @@ body {
 .comments__form-container {
   display: flex;
 }
+@media (min-width: 768px) {
+  .comments__form-container {
+    padding: 0 2rem;
+  }
+}
 .comments__form-text-container {
   margin-left: 1rem;
   width: 75%;
+}
+@media (min-width: 768px) {
+  .comments__form-text-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .comments__form-avatar {
   max-height: 2.25rem;
@@ -530,10 +547,22 @@ body {
 .comments__form-button:hover {
   background-color: #000000;
 }
+@media (min-width: 768px) {
+  .comments__form-button {
+    width: 10rem;
+    align-self: flex-end;
+    margin-left: 2rem;
+  }
+}
 
 .comment {
   display: flex;
   border-top: 1px solid #E1E1E1;
+}
+@media (min-width: 768px) {
+  .comment {
+    margin: 0 2rem;
+  }
 }
 .comment__text-container {
   padding: 0 1rem;
