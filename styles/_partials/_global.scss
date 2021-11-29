@@ -1,8 +1,65 @@
 @use './typography' as *;
 @use './variables';
+@use './mixins';
 
 body {
     margin: 0;
     font-family: 'AvenirNext LT Pro';
     color: variables.$color-bandsite-black;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+    @include mixins.tablet {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        font-weight: 700;
+        padding-top: 3rem;
+        padding-bottom: 2.25rem;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+    @include mixins.tablet {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+        padding-top: 3rem;
+        padding-bottom: 2.25rem;
+    }
+}
+
+h3 {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+
+    @include mixins.tablet {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+}
+
+p {
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+
+    @include mixins.tablet {
+        font-size: .875rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+    }
 }

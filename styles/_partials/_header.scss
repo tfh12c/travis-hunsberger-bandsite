@@ -74,8 +74,6 @@
             margin-top: 2rem;
             padding-right: 1rem;
             padding-bottom: 1.5em;
-            @include mixins.body-text;
-            
         }
 
         @include mixins.desktop {

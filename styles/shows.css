@@ -28,12 +28,70 @@
 /* Tablet/Desktop Form Field Styling */
 /* Mobile Avatar for comments */
 /* Tablet/Desktop for comments */
-/* Mobile Text Styles */
-/* Tablet and Desktop Text Styles */
 body {
   margin: 0;
   font-family: "AvenirNext LT Pro";
   color: #323232;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+h3 {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+@media (min-width: 48rem) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+}
+
+p {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 48rem) {
+  p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
 }
 
 .header {
@@ -43,13 +101,13 @@ body {
   /* Sets Biography and Shows to 50% of screen on mobile */
   /* Styling of Biography and Shows link */
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header {
     display: flex;
     align-items: center;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .header {
     padding-top: 1rem;
   }
@@ -59,12 +117,12 @@ body {
   justify-content: center;
   padding: 1rem 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header__logo-container {
     padding-left: 2rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .header__logo-container {
     padding-left: 8rem;
     margin-bottom: 0.5rem;
@@ -77,7 +135,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header__navigation-list {
     padding-left: 4rem;
     padding-bottom: 0;
@@ -102,120 +160,22 @@ body {
   color: #FFFFFF;
   border-bottom: 0.25rem solid #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header__navigation-link {
     margin-right: 4rem;
     margin-top: 2rem;
     padding-right: 1rem;
     padding-bottom: 1.5em;
-    font-size: 14px;
-    line-height: 1.375rem;
-    font-weight: 400;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .header__navigation-link {
     height: 2rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header__logo-image {
     padding-top: 0.5rem;
-  }
-}
-
-/* Hero background image and sizing here */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: url("../assets/Images/hero-shows.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 36vh;
-  box-shadow: inset 0 0 0 1000px rgba(50, 50, 50, 0.5);
-  /* Album Name */
-  /* Song Title */
-}
-@media (min-width: 768px) {
-  .hero {
-    height: 62vh;
-  }
-}
-@media (min-width: 1280px) {
-  .hero {
-    height: 75vh;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-.hero__album {
-  margin-top: 0;
-  color: #FFFFFF;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-  padding-top: 1.5rem;
-  padding-left: 1rem;
-}
-@media (min-width: 768px) {
-  .hero__album {
-    padding-top: 3rem;
-    padding-bottom: 2.25rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 600;
-    padding-left: 3rem;
-    margin: 0;
-  }
-}
-@media (min-width: 1280px) {
-  .hero__album {
-    padding-left: 10rem;
-  }
-}
-.hero__title {
-  color: #FFFFFF;
-  padding-left: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  width: 15rem;
-}
-@media (min-width: 768px) {
-  .hero__title {
-    font-size: 3.75rem;
-    line-height: 4.25rem;
-    font-weight: 700;
-    padding-left: 3rem;
-    margin: 0;
-    width: 35rem;
-  }
-}
-@media (min-width: 1280px) {
-  .hero__title {
-    padding-left: 10rem;
-    padding-bottom: 2rem;
-    width: 32rem;
-  }
-}
-.hero__soundcloud {
-  width: 95%;
-  margin: 0 auto;
-  height: 5rem;
-}
-@media (min-width: 768px) {
-  .hero__soundcloud {
-    width: 50%;
-    margin: 2rem 0 0 3rem;
-    height: 8rem;
-    padding-top: 3rem;
-  }
-}
-@media (min-width: 1280px) {
-  .hero__soundcloud {
-    width: 35%;
   }
 }
 
@@ -231,7 +191,7 @@ body {
   /* Holds footer contact cards and styling */
   /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .footer {
     padding: 0 5rem 0 5rem;
   }
@@ -239,38 +199,35 @@ body {
 .footer__title {
   margin: 0;
   color: #FFFFFF;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__title {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    font-weight: 700;
-    padding-top: 3rem;
-    padding-bottom: 2.25rem;
     padding-left: 2rem;
     margin-right: 2rem;
+  }
+}
+@media (min-width: 48rem) {
+  .footer__copy {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
   }
 }
 .footer__icon {
   padding-right: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__icon {
     padding-top: 1rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__socials-container {
     display: flex;
     align-items: center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__social-logo-container {
     display: flex;
     align-items: center;
@@ -281,7 +238,7 @@ body {
   display: none;
   /* Makes Tablet/Desktop BANDSITE logo visible */
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__logo-link {
     display: block;
   }
@@ -290,7 +247,7 @@ body {
   margin-top: 4rem;
   /* Hides Mobile BANDSITE logo from Tablet/Desktop view */
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__mobile-logo-image {
     display: none;
   }
@@ -299,13 +256,13 @@ body {
   padding-top: 1rem;
   padding-right: 3rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__card-container {
     display: flex;
     justify-content: space-around;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .footer__card-container {
     justify-content: flex-start;
     -moz-column-gap: 3rem;
@@ -315,24 +272,37 @@ body {
 }
 .footer__person {
   color: #FFFFFF;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__person {
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 400;
   }
 }
+.footer__person-role {
+  color: #FFFFFF;
+  margin: 0;
+}
+@media (min-width: 48rem) {
+  .footer__person-role {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+}
+.footer__contact-info-heading {
+  margin-bottom: 0;
+}
+.footer__contact-info-region {
+  margin-top: 0;
+}
 .footer__contact-info {
   color: #AFAFAF;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__contact-info {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -343,11 +313,8 @@ body {
   margin: 0;
   padding: 1rem 0;
   color: #AFAFAF;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__copyright {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -358,13 +325,95 @@ body {
 
 /* Utilities */
 /* Page Components */
+/* Hero background image and sizing here */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("../assets/Images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 36vh;
+  box-shadow: inset 0 0 0 1000px rgba(50, 50, 50, 0.5);
+  /* Album Name */
+  /* Song Title */
+}
+@media (min-width: 48rem) {
+  .hero {
+    height: 62vh;
+  }
+}
+@media (min-width: 80rem) {
+  .hero {
+    height: 75vh;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.hero__album {
+  margin-top: 0;
+  color: #FFFFFF;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+}
+@media (min-width: 48rem) {
+  .hero__album {
+    padding-left: 3rem;
+    margin: 0;
+  }
+}
+@media (min-width: 80rem) {
+  .hero__album {
+    padding-left: 10rem;
+  }
+}
+.hero__title {
+  color: #FFFFFF;
+  padding-left: 1rem;
+  width: 15rem;
+}
+@media (min-width: 48rem) {
+  .hero__title {
+    padding-left: 3rem;
+    margin: 0;
+    width: 35rem;
+  }
+}
+@media (min-width: 80rem) {
+  .hero__title {
+    padding-left: 10rem;
+    padding-bottom: 2rem;
+    width: 32rem;
+  }
+}
+.hero__soundcloud {
+  width: 95%;
+  margin: 0 auto;
+  height: 5rem;
+}
+@media (min-width: 48rem) {
+  .hero__soundcloud {
+    width: 50%;
+    margin: 2rem 0 0 3rem;
+    height: 8rem;
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 80rem) {
+  .hero__soundcloud {
+    width: 35%;
+  }
+}
+
+/* Shows Section */
 .shows {
   padding-bottom: 1rem;
   /* Hides mobile list of shows from tablet/desktop view */
   /* Hides tablet/desktop shows list from mobile */
   /* shows card for tablet/desktop */
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .shows {
     padding-bottom: 3rem;
   }
@@ -373,7 +422,7 @@ body {
   margin: 0;
   padding: 1.5rem 0 0 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .shows__mobile-list {
     display: none;
   }
@@ -381,12 +430,12 @@ body {
 .shows__list {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .shows__list {
     display: block;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .shows__list {
     padding-left: 15rem;
     padding-right: 5rem;
@@ -441,7 +490,7 @@ body {
   background-color: #323232;
   color: #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .shows__button {
     width: 8rem;
   }

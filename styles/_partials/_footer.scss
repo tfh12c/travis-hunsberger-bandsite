@@ -13,14 +13,18 @@
     &__title {
         margin: 0;
         color: variables.$color-white;
-        @include mixins.mobile-header-text;
-        @include mixins.mobile-header-padding;
 
         @include mixins.tablet {
-            @include mixins.section-header-text;
-            @include mixins.header-padding;
             padding-left: 2rem;
             margin-right: 2rem;
+        }
+    }
+
+    &__copy {
+        @include mixins.tablet {
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 400;
         }
     }
 
@@ -92,20 +96,43 @@
 
     &__person {
         color: variables.$color-white;
-        @include mixins.mobile-body-footer-text;
+        margin-top: 1rem;
+        margin-bottom: 0;
 
         @include mixins.tablet {
-            @include mixins.footer-text;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 400;
         }
+    }
+
+    &__person-role {
+        color: variables.$color-white;
+        margin: 0;
+
+        @include mixins.tablet {
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 400;
+        }
+    }
+
+    &__contact-info-heading {
+        margin-bottom: 0;
+    }
+
+    &__contact-info-region {
+        margin-top: 0;
     }
 
     /* visually could not tell on the mockup if text after footer names/roles were white or secondary color, so applied secondary */
     &__contact-info {
         color: variables.$color-silver;
-        @include mixins.mobile-body-footer-text;
 
         @include mixins.tablet {
-            @include mixins.footer-text;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 400;
         }
     }
 
@@ -113,10 +140,11 @@
         margin: 0;
         padding: 1rem 0;
         color: variables.$color-silver;
-        @include mixins.mobile-body-footer-text;
 
         @include mixins.tablet {
-            @include mixins.footer-text;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 400;
             padding: 3rem 0 3rem 2rem;
         }
     }

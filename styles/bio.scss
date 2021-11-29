@@ -6,12 +6,218 @@
 
 /* Page Components */
 @use './_partials/header';
-@use './_partials/hero-bio';
-@use './_partials/about';
-@use './_partials/gallery';
 @use './_partials/footer';
 
+/* Hero Section */
+/* Hero background image and sizing here */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   background: url('../assets/Images/hero-shows.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 36vh;
+   box-shadow: inset 0 0 0 1000px rgba(50,50,50,.5);
 
+   @include mixins.tablet {
+       height: 62vh;
+   }
+
+   @include mixins.desktop {
+       height: 75vh;
+       flex-direction: row;
+       align-items: center;
+   }
+
+   /* Album Name */
+   &__album {
+       margin-top: 0;
+       color: variables.$color-white;
+       padding-top: 1.5rem;
+       padding-left: 1rem;
+
+       @include mixins.tablet {
+           padding-left: 3rem;
+           margin: 0;
+       }
+
+       @include mixins.desktop {
+        padding-left: 10rem;
+    }
+   }
+
+   /* Song Title */
+   &__title {
+       color: variables.$color-white;
+       padding-left: 1rem;
+       width: 15rem;
+
+       @include mixins.tablet {
+           padding-left: 3rem;
+           margin: 0;
+           width: 35rem;
+       }
+
+       @include mixins.desktop {
+           padding-left: 10rem;
+           padding-bottom: 2rem;  
+           width: 32rem;
+       }
+   }
+
+   &__soundcloud {
+       width: 95%;
+       margin: 0 auto;
+       height: 5rem;
+       
+       @include mixins.tablet {
+           width: 50%;
+           margin: 2rem 0 0 3rem;
+           height: 8rem;
+           padding-top: 3rem;
+       }
+
+       @include mixins.desktop {
+           width: 35%;
+       }
+   }
+}
+
+/* About Section */
+.about {
+    padding: 0 1rem 1rem 1rem;
+
+    @include mixins.tablet {
+        padding-bottom: 2.25rem;
+    }
+
+    /* About the Musicians */
+    &__title {
+        margin: 0;
+
+        @include mixins.tablet {
+            padding-left: 2rem;
+        }
+        @include mixins.desktop {
+            padding-left: 6rem;
+        }
+    }
+
+    /* Holds all elements under section title */
+    &__container {
+        @include mixins.tablet {
+            display: flex;
+            flex-direction: column;
+            margin: 0 5rem;
+        }
+        @include mixins.desktop {
+            margin: 0 11rem;
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Quote beneath section picture */
+    &__subheader {
+        font-size: .875rem;
+        line-height: 1.375rem;
+        font-weight: 600;
+
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+        @include mixins.desktop {
+            width: 45rem;
+        }
+    }
+
+    /* Attributing quote from Bryan Teddy */
+    &__subheader-attribution {
+        @include mixins.tablet {
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-top: -1rem;
+        }
+    }
+
+    /* Puts body text side by side */
+    &__body-text-container {
+        @include mixins.tablet {
+            display: flex;
+        }
+    }
+
+    &__body-header {
+
+        @include mixins.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__body-text {
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    /* Adds padding between side by side text */
+    &__body-text-left {
+        @include mixins.tablet {
+            padding-right: 1rem;
+        }
+    }
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: variables.$color-alabaster;
+    padding: 0 1rem;
+
+    @include mixins.tablet {
+        padding-bottom: 2.25rem;
+    }
+
+    @include mixins.desktop {
+        padding: 0 5rem 2.25rem 5rem;
+    }
+
+    &__title {
+        margin: 0;
+
+        @include mixins.tablet {
+            padding-left: 2rem;
+        }
+    }
+
+    /* Changes gallery images to flex wrap and center, gap for layout grid */
+    &__container {
+        @include mixins.tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+    }
+
+    &__item {
+      padding-bottom: 1rem;
+      width: 100%;
+
+      @include mixins.tablet {
+          width: 30%;
+          padding-bottom: 0;
+      }
+    }
+}
+
+/* Comments Section */
 .comments {
     padding: 0 1rem;
     margin-bottom: 1rem;
@@ -27,7 +233,6 @@
     }
 
     &__title {
-        @include mixins.mobile-header-padding;
         margin: 0;
     }
 
