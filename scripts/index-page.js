@@ -197,5 +197,5 @@ function handleFormSubmit(event) {
     });
 }
 
-
+// comments.unshift(newComment);
 getComments();
