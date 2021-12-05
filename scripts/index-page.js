@@ -112,6 +112,11 @@ const apiKey = "46f2f791-31c4-43f3-9d49-d80f10236a83";
 // formEl.addEventListener('submit', handleFormSubmit);
 // renderComments();
 
+
+
+
+// Start of refactor for API 
+
 // gets the comments form
 const commentForm = document.querySelector('.comments__form');
 
@@ -151,7 +156,7 @@ function displayComments(comments) {
     
         const commentDate = document.createElement('span')
         commentDate.classList.add('comment__date');
-        commentDate.innerText = comment.timestamp;
+        commentDate.innerText = comment.date;
         commentNameDateContainer.appendChild(commentDate);
     
         const commentText = document.createElement('p');
@@ -169,6 +174,23 @@ function getComments() {
         .then((response) => {
             console.log(response.data);
             const comments = response.data;
+            
+            // takes comments array and creates a new date object at each index based off timestamp
+            comments.forEach((comment, i) => {
+                comments[i].date = new Date(comment.timestamp)
+            });
+
+            // sorts comments array based on date object
+            comments.sort(function(a, b) {
+                return b.date - a.date;
+            });
+
+            // takes date object and formats into string 
+            comments.forEach((comment, i) => {
+                const newDate = comment.date
+                comments[i].date = newDate.getMonth() + 1 + "/" + newDate.getDate() + "/" + newDate.getFullYear();
+            });
+
             displayComments(comments);
         })
         .catch(() => {
@@ -176,9 +198,46 @@ function getComments() {
         });
 }
 
+// grab comment form name entry for validation
+const commentName = document.querySelector('.comments__form-fullname');
+// grab comment form comment area for validation
+const commentText = document.querySelector('.comments__form-comment');
+
+// if name field is empty, will outline area with red
+function nameValidation() {
+    if (!commentName.value) {
+        commentName.style.border = '1px solid';
+        commentName.style.borderColor = '#D22D2D';
+    }
+}
+
+// if comment field is empty, will outline area with red 
+function commentValidation() {
+    if (!commentText.value) {
+        commentText.style.border = '1px solid';
+        commentText.style.borderColor = '#D22D2D';
+    }
+}
+
 function handleFormSubmit(event) {
     // prevent auto refresh 
     event.preventDefault();
+
+    // name and comment validation
+    nameValidation();
+    commentValidation();
+
+    const fullName = document.getElementById('fullName').value;
+    if (fullName === "") {
+        alert("Please enter your name");
+        return false;
+    }
+
+    const comment = document.getElementById('comment').value;
+    if (comment === "") {
+        alert("Please enter a comment");
+        return false;
+    }
 
     const newComment = {
         name: event.target.fullName.value,
@@ -197,5 +256,4 @@ function handleFormSubmit(event) {
     });
 }
 
-// comments.unshift(newComment);
 getComments();
