@@ -427,6 +427,11 @@ p {
     padding: 3rem 0 2rem 3rem;
   }
 }
+@media (min-width: 80rem) {
+  .shows__header {
+    padding: 3rem 0 0 6rem;
+  }
+}
 @media (min-width: 48rem) {
   .shows__mobile-list {
     display: none;
@@ -444,18 +449,17 @@ p {
   .shows__list {
     padding-left: 15rem;
     padding-right: 5rem;
+    margin-top: -4rem;
   }
 }
 .shows__mobile-card {
   padding: 1rem;
   border-bottom: 1px solid #E1E1E1;
-  /* LVHA order hover has to be before active */
-  /* LVHA order active has to be after hover */
 }
-.shows__mobile-card:hover {
+.shows__mobile-card--hover:hover {
   background-color: #FAFAFA;
 }
-.shows__mobile-card:active {
+.shows__mobile-card--active:active {
   background-color: #E1E1E1;
 }
 .shows__card {
@@ -464,13 +468,11 @@ p {
   padding: 1.5rem 1.125rem;
   margin: 0 1rem;
   border-bottom: 1px solid #E1E1E1;
-  /* LVHA order hover has to be before active */
-  /* LVHA order active has to be after hover */
 }
-.shows__card:hover {
+.shows__card--hover:hover {
   background-color: #FAFAFA;
 }
-.shows__card:active {
+.shows__card--active:active {
   background-color: #E1E1E1;
 }
 .shows__logistics-container {
@@ -494,6 +496,9 @@ p {
   border-radius: 0.25rem;
   background-color: #323232;
   color: #FFFFFF;
+}
+.shows__button:hover {
+  background-color: #000000;
 }
 @media (min-width: 48rem) {
   .shows__button {

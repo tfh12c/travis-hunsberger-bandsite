@@ -99,6 +99,10 @@
         @include mixins.tablet{
             padding: 3rem 0 2rem 3rem;
         }
+
+        @include mixins.desktop {
+            padding: 3rem 0 0 6rem;
+        }
     }
 
     /* Hides mobile list of shows from tablet/desktop view */
@@ -119,22 +123,21 @@
         @include mixins.desktop {
             padding-left: 15rem;
             padding-right: 5rem;
+            margin-top: -4rem;
         }
     }
 
     &__mobile-card {
         padding: 1rem;
         border-bottom: 1px solid variables.$color-mercury;
+    }
 
-        /* LVHA order hover has to be before active */
-        &:hover {
-            background-color: variables.$color-alabaster;
-        }
+    &__mobile-card--hover:hover {
+        background-color: variables.$color-alabaster;
+    }
 
-        /* LVHA order active has to be after hover */
-        &:active {
-            background-color: variables.$color-mercury;
-        }
+    &__mobile-card--active:active {
+        background-color: variables.$color-mercury;
     }
 
     /* shows card for tablet/desktop */
@@ -144,16 +147,14 @@
         padding: 1.5rem 1.125rem;
         margin: 0 1rem;
         border-bottom: 1px solid variables.$color-mercury;
+    }
 
-        /* LVHA order hover has to be before active */
-        &:hover {
-            background-color: variables.$color-alabaster;
-        }
+    &__card--hover:hover {
+        background-color: variables.$color-alabaster;
+    }
 
-        /* LVHA order active has to be after hover */
-        &:active {
-            background-color: variables.$color-mercury;
-        }
+    &__card--active:active {
+        background-color: variables.$color-mercury;
     }
 
     &__logistics-container {
@@ -186,6 +187,10 @@
         border-radius: .25rem;
         background-color: variables.$color-bandsite-black;
         color: variables.$color-white;
+
+        &:hover {
+            background-color: variables.$color-bandsite-darkblack;
+        }
 
         @include mixins.tablet {
             width: 8rem;

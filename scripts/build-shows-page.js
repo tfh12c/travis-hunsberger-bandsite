@@ -178,6 +178,8 @@ function displayMobileShows(shows) {
         //card element
         const card = document.createElement('article');
         card.classList.add('shows__mobile-card');
+        card.classList.add('shows__mobile-card--hover');
+        card.classList.add('shows__mobile-card--active');
         showMobileElement.appendChild(card);
 
         // creates date heading
@@ -260,6 +262,8 @@ function displayShows(shows) {
     // card element
     const card = document.createElement('article');
     card.classList.add('shows__card');
+    card.classList.add('shows__card--hover');
+    card.classList.add('shows__card--active');
     showElement.appendChild(card);
 
     // pulls date from shows array
