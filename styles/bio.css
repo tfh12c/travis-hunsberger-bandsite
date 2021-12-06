@@ -522,6 +522,7 @@ p {
 }
 .comments__form-container {
   display: flex;
+  width: 100%;
 }
 @media (min-width: 48rem) {
   .comments__form-container {

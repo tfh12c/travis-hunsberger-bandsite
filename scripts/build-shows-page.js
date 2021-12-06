@@ -293,8 +293,25 @@ function getShows() {
     axios
     .get(`${apiUrl}/showdates?api_key=${apiKey}`)
     .then((response) => {
-        console.log(response);
+        console.log(response.data);
         const shows = response.data;
+
+        // takes shows array date and converts date string into date number
+        shows.forEach((show, i) => {
+            shows[i].date = Number(show.date)
+        });
+
+         // takes shows array date and converts date number to regular date
+         shows.forEach((show, i) => {
+            shows[i].date = new Date(show.date)
+        });
+
+         // takes shows arrat date and converts date to toDateString/more readable format 
+         shows.forEach((show, i) => {
+            shows[i].date = show.date.toDateString();
+        });
+
+
         displayMobileShows(shows);
         displayShows(shows);
     })

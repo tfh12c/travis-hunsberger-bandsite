@@ -423,6 +423,11 @@ p {
   padding: 1.5rem 0 0 1rem;
 }
 @media (min-width: 48rem) {
+  .shows__header {
+    padding: 3rem 0 2rem 3rem;
+  }
+}
+@media (min-width: 48rem) {
   .shows__mobile-list {
     display: none;
   }

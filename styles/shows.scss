@@ -95,6 +95,10 @@
     &__header {
         margin: 0;
         padding: 1.5rem 0 0 1rem;
+
+        @include mixins.tablet{
+            padding: 3rem 0 2rem 3rem;
+        }
     }
 
     /* Hides mobile list of shows from tablet/desktop view */
