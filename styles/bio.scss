@@ -223,6 +223,10 @@
     &__form-avatar {
         @include mixins.mobile-avatar;
         margin-top: 2rem;
+
+        @include mixins.tablet {
+            @include mixins.avatar;
+        }
     }
 
     /* Styling for the form inputs */
@@ -285,7 +289,7 @@
 
     &__text-container {
         padding: 0 1rem;
-        min-width: 90%;
+        width: 90%;
     }
 
     &__name-date-container {
@@ -314,5 +318,9 @@
         @include mixins.mobile-avatar;
         margin-top: 2rem;
         background-color: variables.$color-mercury;
+
+        @include mixins.tablet {
+            @include mixins.avatar;
+        }
     }
 }

@@ -136,9 +136,9 @@ function displayComments(comments) {
 
         const commentAvatar = document.createElement('img');
         commentAvatar.classList.add('comment__avatar');
-        commentAvatar.setAttribute('src', "//:0") // Not sure how to get this to work without having the broken image icon. All research said img src would need to be //:0
-        commentAvatar.style.height = "36px";
-        commentAvatar.style.width = "36px";
+        //commentAvatar.setAttribute('src', "//:0") // Not sure how to get this to work without having the broken image icon. All research said img src would need to be //:0
+        //commentAvatar.style.height = "2.25rem";
+        //commentAvatar.style.width = "2.25rem";
         cardEl.appendChild(commentAvatar);
     
         const commentTextContainer = document.createElement('div');

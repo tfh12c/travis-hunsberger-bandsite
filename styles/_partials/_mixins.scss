@@ -53,14 +53,14 @@
 
 /* Mobile Avatar for comments */
 @mixin mobile-avatar {
-    max-height: 2.25rem;
-    max-width: 2.25rem;
+    height: 2.25rem;
+    width: 2.25rem;
     border-radius: 50%;
 }
 
 /* Tablet/Desktop for comments */
 @mixin avatar {
-    max-height: 3rem;
-    max-width: 3rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
 }
