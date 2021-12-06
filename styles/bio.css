@@ -458,6 +458,7 @@ p {
 .gallery {
   background-color: #FAFAFA;
   padding-left: 1rem;
+  padding-right: 1rem;
   /* Changes gallery images to flex wrap and center, gap for layout grid */
 }
 @media (min-width: 48rem) {
@@ -502,7 +503,7 @@ p {
   padding: 0 1rem;
   margin-bottom: 1rem;
   /* Holds the entire form, display flex to bring avatar image for text div into alignment */
-  /* Adds margin for space from avatar, set div width to 75% of page */
+  /* Adds margin for space from avatar */
   /* Styling for the form inputs */
 }
 @media (min-width: 48rem) {
@@ -522,16 +523,18 @@ p {
 }
 .comments__form-container {
   display: flex;
-  width: 100%;
+  width: 90%;
 }
 @media (min-width: 48rem) {
   .comments__form-container {
     padding: 0 2rem;
+    width: 88%;
   }
 }
 @media (min-width: 80rem) {
   .comments__form-container {
     padding: 0 10rem;
+    width: 71%;
   }
 }
 .comments__form-text-container {
@@ -542,6 +545,7 @@ p {
   .comments__form-text-container {
     display: flex;
     flex-direction: column;
+    width: 91%;
   }
 }
 .comments__form-avatar {

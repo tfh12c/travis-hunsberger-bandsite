@@ -138,6 +138,7 @@
 .gallery {
     background-color: variables.$color-alabaster;
     padding-left: 1rem;
+    padding-right: 1rem;
 
     @include mixins.tablet {
         padding-bottom: 2.25rem;
@@ -161,7 +162,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            // gap: 1.5rem;
         }
     }
 
@@ -199,18 +199,20 @@
     /* Holds the entire form, display flex to bring avatar image for text div into alignment */
     &__form-container {
         display: flex;
-        width: 100%;
+        width: 90%;
 
         @include mixins.tablet {
             padding: 0 2rem;
+            width: 88%;
         }
 
         @include mixins.desktop {
             padding: 0 10rem;
+            width: 71%;
         }
     }
 
-    /* Adds margin for space from avatar, set div width to 75% of page */
+    /* Adds margin for space from avatar */
     &__form-text-container {
         margin-left: 1rem;
         width: 75%;
@@ -218,6 +220,11 @@
         @include mixins.tablet {
             display: flex;
             flex-direction: column;
+            width: 91%
+        }
+
+        @include mixins.desktop {
+            // width: 71%;
         }
     }
 
